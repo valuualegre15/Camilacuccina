@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chef resp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#"><img class="logo" src="images/ns.png" alt=""></a>
+        <div class="menutoggle" onclick="togglemenu();"></div>
+        <ul class="navigation">
+            <li><a href="#banner" class="href">Inicio</a></li>
+            <li><a href="#about" class="href">About</a></li>
+            <li><a href="#menu" class="href">Menu</a></li>
+            <li><a href="#contact" class="href">Reserva</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <video autoplay muted loop class="video-bg">
+            <source src="./images/7550986-uhd_3840_2160_30fps.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <h2 class="name">Camilla Cucina</h2>
+            <a href="#contact" class="btn">Hace tu Pedido</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titletext">Sobre mi</h2>
+                <p class="titlepar">Mi nombre es Camilla Vázquez y tengo 27 años. Desde mi infancia, he estado inmersa en el mundo de la repostería gracias a los maravillosos postres que mi madre creaba para celebrar las fiestas y eventos familiares. Con el tiempo, me he dedicado a perfeccionar mis habilidades culinarias y he descubierto que mi verdadera pasión reside en crear experiencias gastronómicas únicas y memorables.<br><br>Mi objetivo con Camilla Cucina es ofrecerles no solo exquisitos postres, sino también un viaje sensorial donde cada creación sea una explosión de sabores, texturas y emociones. Quiero compartir con ustedes mi pasión por la cocina y deleitarlos con todo lo que tengo para ofrecer, desde clásicos reinventados hasta creaciones innovadoras que despierten sus sentidos y los transporten a momentos de puro disfrute.</p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img class="cami" src="./images/cami3.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <hr>
+        <div class="title">
+            <h2 class="titletext">Nuestro menu</h2>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img class="color-change-img" src="./images/budin.jpg">
+                </div>
+                <div class="text">
+                    <h3>Budines</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img class="color-change-img" src="./images/chocotor.jpg">
+                </div>
+                <div class="text">
+                    <h3>Chocotorta</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img class="color-change-img" src="./images/principehum.jpg">
+                </div>
+                <div class="text">
+                    <h3>Principe Humberto</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img class="color-change-img" src="./images/rogel.jpg">
+                </div>
+                <div class="text">
+                    <h3>Torta Rogel</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img class="color-change-img" src="./images/roll.jpg">
+                </div>
+                <div class="text">
+                    <h3>Rolls</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img class="color-change-img" src="./images/rosca.jpg">
+                </div>
+                <div class="text">
+                    <h3>Rosca de pascua</h3>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <a href="productos.html" class="btn">View All</a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title ">
+            <h2 class="titletext"><span>R</span>ealiza tu reserva</h2>
+        </div>
+        <div class="contactForm">
+            
+            <h3>Reserva</h3>
+            <form
+            action="https://formspree.io/f/mwkgwjkd"
+            method="POST"
+          >
+            <div class="inputBox">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>           
+             </div>
+            <div class="inputBox">
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br><br>
+                        </div>
+            <div class="inputBox">
+                <label for="postre">Postre deseado:</label>
+                <select class="select" id="postre" name="postre" required>
+                    <option value="tarta">Torta Rogel</option>
+                    <option value="helado">Torta Diamanta</option>
+                    <option value="flan">Carrot Cake</option>
+                    <option value="flan">CheeseCake Oreo</option>
+                    <option value="flan">Choco Torta</option>
+                    <option value="flan">Brownie</option>
+                    <option value="flan">Budines</option>
+                    <option value="flan">Rolls</option>
+                    <option value="flan">Chaja</option>
+                    <option value="flan">Reina Africana</option>
+                    <option value="flan">Principe Humberto</option>
+                    <option value="flan">Otro</option>
+
+
+                             
+            </select><br><br>
+                                </div>
+                                <div class="inputBox">
+                                    <label for="postre">Tamaño:</label>
+                                    <select class="select" id="postre" name="postre" required>
+                                        <option value="tarta">Mini</option>
+                                        <option value="helado">Grande</option>
+                                                 
+                                </select><br><br>
+                                                    </div>
+            <div class="inputBox">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required><br><br>
+                        </div>
+                        <a href="#" class="btn">Enviar Reserva</a>             </div>
+    </form>
+
+
+
+
+
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-contact">
+        
+                <div class="social-links">
+                    <a href="https://wa.me/+59899425117" target="_blank"><img class="insta" src="images/what.png" alt="Whatsapp"></a>
+                    <a href="https://www.instagram.com/camillacucinaa" target="_blank"><img class="insta" src="images/Instagram.png" alt="Instagram"></a>
+                    <a href="mailto:camillacucinauy@gmail.com" target="_blank"><img class="insta" src="images/gmail.png" alt="Gmail"></a>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <img class="logo" src="images/white.png" alt="Logo">
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function togglemenu(){
+        const menutoggle = document.querySelector('.menutoggle');
+        const navigation = document.querySelector('.navigation');
+        menutoggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+
+    </script>
+
+    
+
+</body>
+
+</html>
