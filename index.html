@@ -29,7 +29,17 @@
             <a href="#contact" class="btn">Hace tu Pedido</a>
         </div>
     </section>
+    <script>
+        const video = document.getElementById('video-bg');
 
+        video.addEventListener('loadeddata', () => {
+            video.play();
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            video.play();
+        });
+    </script>
     <section class="about" id="about">
         <div class="row">
             <div class="col50">
