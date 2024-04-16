@@ -13,6 +13,12 @@ p{
     font-weight: 300;
     color:#111;
 }
+
+.video-bg::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
+}
+
 .banner {
     position: relative;
     width: 100%;
@@ -415,7 +421,7 @@ hr {
     }
     header .navigation li a{
         
-        color: #111;
+        color: #111 !important;
         font-size: 2.6em;
         font-family: 'inter Tight';
         /* font-weight: 300; */
@@ -446,7 +452,7 @@ hr {
     }
     .banner .content h2{
         font-size: 3em;
-        color: #fff;
+        color: #020202 !important;
     }
     .row{
         flex-direction: column;
